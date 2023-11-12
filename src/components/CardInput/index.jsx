@@ -25,6 +25,8 @@ export default function CardInput() {
       }
     });
 
+    inputRefs[0].current.focus();
+
     return () => {
       inputRefs.forEach((ref, index) => {
         if (index < inputRefs.length - 1) {
